@@ -7,9 +7,10 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
-    "test": "ng test",
+    "test": "jest",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "test:watch": "jest --watch"
   },
   "private": true,
   "dependencies": {
@@ -29,6 +30,7 @@
     "zone.js": "~0.10.2"
   },
   "devDependencies": {
+    "@angular-builders/jest": "^9.0.1",
     "@angular-devkit/build-angular": "~0.901.5",
     "@angular/cli": "~9.1.5",
     "@angular/compiler": "~9.1.6",
@@ -36,21 +38,48 @@
     "@angular/language-service": "~9.1.6",
     "@capacitor/cli": "2.2.0",
     "@ionic/angular-toolkit": "^2.1.1",
-    "@types/jasmine": "~3.5.0",
-    "@types/jasminewd2": "~2.0.3",
+    "@types/jest": "^26.0.0",
     "@types/node": "^12.11.1",
     "codelyzer": "^5.1.2",
-    "jasmine-core": "~3.5.0",
-    "jasmine-spec-reporter": "~4.2.1",
-    "karma": "~5.0.0",
-    "karma-chrome-launcher": "~3.1.0",
-    "karma-coverage-istanbul-reporter": "~2.1.0",
-    "karma-jasmine": "~3.0.1",
-    "karma-jasmine-html-reporter": "^1.4.2",
+    "jest": "^26.0.1",
+    "jest-preset-angular": "8.2.0",
     "protractor": "~5.4.3",
     "ts-node": "~8.3.0",
     "tslint": "~6.1.0",
     "typescript": "~3.8.3"
   },
-  "description": "An Ionic project"
+  "description": "An Ionic project",
+  "jest": {
+    "preset": "jest-preset-angular",
+    "roots": [
+      "src"
+    ],
+    "transform": {
+      "^.+\\.(ts|js|html)$": "ts-jest"
+    },
+    "transformIgnorePatterns": [
+      "node_modules/(?!(@ionic-native)/)"
+    ],
+    "setupFilesAfterEnv": [
+      "<rootDir>/src/setup-jest.ts"
+    ],
+    "moduleNameMapper": {
+      "@app/(.*)": "<rootDir>/src/app/$1",
+      "@assets/(.*)": "<rootDir>/src/assets/$1",
+      "@core/(.*)": "<rootDir>/src/app/core/$1",
+      "@env": "<rootDir>/src/environments/environment",
+      "@src/(.*)": "<rootDir>/src/src/$1",
+      "@state/(.*)": "<rootDir>/src/app/state/$1"
+    },
+    "globals": {
+      "ts-jest": {
+        "tsConfig": "<rootDir>/tsconfig.spec.json",
+        "stringifyContentPathRegex": "\\.html$",
+        "astTransformers": [
+          "jest-preset-angular/build/InlineFilesTransformer",
+          "jest-preset-angular/build/StripStylesTransformer"
+        ]
+      }
+    }
+  }
 }
