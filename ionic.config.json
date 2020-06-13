@@ -1,0 +1,7 @@
+{
+  "name": "loopgroepgroningen",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
