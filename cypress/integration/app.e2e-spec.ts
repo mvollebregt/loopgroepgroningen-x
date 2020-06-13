@@ -1,4 +1,4 @@
-import { AppPage } from './app.po';
+import {AppPage} from './app.po';
 
 describe('new App', () => {
   let page: AppPage;
@@ -8,10 +8,10 @@ describe('new App', () => {
   });
   describe('default screen', () => {
     beforeEach(() => {
-      page.navigateTo('/Inbox');
+      cy.visit('/Inbox');
     });
     it('should say Inbox', () => {
-      expect(page.getParagraphText()).toContain('Inbox');
+      page.getParagraph().contains('Inbox');
     });
   });
 });
