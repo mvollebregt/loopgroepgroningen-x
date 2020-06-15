@@ -7,6 +7,7 @@ import {Trainingsschema} from '../model/trainingsschema';
 import {TrainingsschemaConfiguration} from './trainingsschema.configuration';
 import {Training} from '../model/training';
 import {normalizeString} from '../../shared/string-utils';
+import {DateTime} from 'luxon';
 
 @Injectable({
   providedIn: 'root'
@@ -15,6 +16,10 @@ export class TrainingsschemaApiService {
 
   static readonly baseApiUrl = 'http://nieuwesite.loopgroepgroningen.nl/wp-json/wp/v2/';
   static readonly trainingsschemaUrl = 'pages/185';
+
+  private static transformations: { [P in keyof Partial<Training>]: (originalValue: string) => Training[P] } = {
+    datum: originalValue => DateTime.fromFormat(originalValue, 'd-M-y').toISODate()
+  };
 
   constructor(private http: HttpClient) {
   }
@@ -77,7 +82,8 @@ export class TrainingsschemaApiService {
       for (const [property, index] of propertyIndexes) {
         const textContent = columns.item(index).textContent;
         if (textContent) {
-          training[property] = textContent;
+          const transformation = TrainingsschemaApiService.transformations[property] || (originalValue => originalValue);
+          training[property] = transformation(textContent);
         }
       }
       result.push(training as Training);
