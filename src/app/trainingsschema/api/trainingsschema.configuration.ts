@@ -5,7 +5,7 @@ export interface TrainingsschemaConfiguration {
   columns: { [columnName: string]: keyof Training };
   params: {
     dateFormat: string
-    groep: string
+    groepRemoveSubstrings: string[]
   };
 
 }

@@ -10,6 +10,8 @@
   },
   "params": {
     "dateFormat": "d-M-y",
-    "groep": "groep"
+    "groepRemoveSubstrings": [
+      "groep"
+    ]
   }
 }

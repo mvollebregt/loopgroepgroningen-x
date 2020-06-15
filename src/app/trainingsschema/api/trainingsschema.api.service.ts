@@ -6,7 +6,7 @@ import {combineLatest, Observable} from 'rxjs';
 import {Trainingsschema} from '../model/trainingsschema';
 import {TrainingsschemaConfiguration} from './trainingsschema.configuration';
 import {Training} from '../model/training';
-import {normalizeString} from '../../shared/string-utils';
+import {normalizeString, toTitleCase} from '../../shared/string-utils';
 import {DateTime} from 'luxon';
 
 @Injectable({
@@ -92,6 +92,8 @@ export class TrainingsschemaApiService {
     switch (property) {
       case 'datum':
         return DateTime.fromFormat(value, config.params.dateFormat).toISODate();
+      case 'groep':
+        return toTitleCase(value.replace(new RegExp(config.params.groepRemoveSubstrings.join('|'), 'g'), ''));
       default:
         return value;
     }
