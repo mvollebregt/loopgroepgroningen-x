@@ -74,6 +74,20 @@ describe('TrainingsschemaApiService', () => {
     flushResponse(response);
   });
 
+  it('Should sort by datum and groep', done => {
+    const response = createResponse(
+      {omschrijving: 'training 3', datum: '13-7-1976', groep: 'A'},
+      {omschrijving: 'training 2', datum: '14-6-1976', groep: 'B'},
+      {omschrijving: 'training 1', datum: '14-6-1976', groep: 'A'},
+      {omschrijving: 'training 4', datum: '13-7-1976', groep: 'B'});
+    service.fetchTrainingsschema().subscribe(trainingsschema => {
+      expect(trainingsschema.map(training => training.omschrijving))
+        .toEqual(['training 1', 'training 2', 'training 3', 'training 4']);
+      done();
+    });
+    flushResponse(response);
+  });
+
   function createResponse(...trainingen: Partial<Training>[]): TrainingsschemaApiResponse {
     return {
       content: {

@@ -34,13 +34,13 @@ export class TrainingsschemaApiService {
       const headers = document.querySelectorAll('thead th');
       const propertyIndexes = TrainingsschemaApiService.propertyIndexes(config, headers);
       const rows = document.querySelectorAll('tbody tr');
-      return TrainingsschemaApiService.trainingen(config, propertyIndexes, rows);
+      return TrainingsschemaApiService.trainingen(config, propertyIndexes, rows).sort(TrainingsschemaApiService.compareTraining);
     }));
   }
 
   /**
    * Fetches the trainingsschema configuration.
-   * The trainingsschema configuration maps the column names in the HTML to property names of the Training-object.
+   * The trainingsschema configuration maps the column names in the HTML to property names of the Training object.
    * When running locally, the configuration is read from the assets folder. When running as a real app, the configuration is read from
    * the github repo.
    */
@@ -49,7 +49,7 @@ export class TrainingsschemaApiService {
   }
 
   /**
-   * Determines the index in the HTML of each of the properties of the Training-object, based on the trainingsschema configuration, and the
+   * Determines the index in the HTML of each of the properties of the Training object, based on the trainingsschema configuration, and the
    * header titles that were read from the HTML.
    */
   private static propertyIndexes(config: TrainingsschemaConfiguration, headers: NodeListOf<Element>): [keyof Training, number][] {
@@ -68,7 +68,7 @@ export class TrainingsschemaApiService {
   }
 
   /**
-   * Translates the data in the HTML table into a list of Training-objects, based on the property indexes determined earlier.
+   * Translates the data in the HTML table into a list of Training objects, based on the property indexes determined earlier.
    */
   private static trainingen(config: TrainingsschemaConfiguration,
                             propertyIndexes: [keyof Training, number][],
@@ -88,6 +88,9 @@ export class TrainingsschemaApiService {
     return result;
   }
 
+  /**
+   * Transforms original values in the HTML data to actual values in the model used by the application.
+   */
   private static transform<K extends keyof Training>(property: K, value: string, config: TrainingsschemaConfiguration): Training[K] {
     switch (property) {
       case 'datum':
@@ -97,5 +100,24 @@ export class TrainingsschemaApiService {
       default:
         return value;
     }
+  }
+
+  /**
+   * Sort order for Training objects.
+   */
+  private static compareTraining(a: Training, b: Training) {
+    if (a.datum < b.datum) {
+      return -1;
+    }
+    if (a.datum > b.datum) {
+      return 1;
+    }
+    if (a.groep < b.groep) {
+      return -1;
+    }
+    if (a.groep > b.groep) {
+      return 1;
+    }
+    return 0;
   }
 }
