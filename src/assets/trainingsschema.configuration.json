@@ -1,9 +1,15 @@
 {
-  "Dag": "dag",
-  "Datum": "datum",
-  "Groep": "groep",
-  "Week": "week",
-  "Soort": "omschrijving",
-  "Locatie": "locatie",
-  "Training": "type"
+  "columns": {
+    "Dag": "dag",
+    "Datum": "datum",
+    "Groep": "groep",
+    "Week": "week",
+    "Soort": "omschrijving",
+    "Locatie": "locatie",
+    "Training": "type"
+  },
+  "params": {
+    "dateFormat": "d-M-y",
+    "groep": "groep"
+  }
 }

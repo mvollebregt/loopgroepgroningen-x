@@ -1,5 +1,11 @@
 import {Training} from '../model/training';
 
 export interface TrainingsschemaConfiguration {
-  [columnName: string]: keyof Training;
+
+  columns: { [columnName: string]: keyof Training };
+  params: {
+    dateFormat: string
+    groep: string
+  };
+
 }

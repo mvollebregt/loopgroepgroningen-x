@@ -11,8 +11,11 @@ import {of} from 'rxjs';
 describe('TrainingsschemaApiService', () => {
 
   const props: (keyof Training)[] = ['week', 'dag', 'groep', 'datum', 'omschrijving', 'locatie', 'type'];
-  const config: TrainingsschemaConfiguration = Object.fromEntries(props.map(prop => [`Column name of ${prop}`, prop]));
-  const columnNames = Object.keys(config);
+  const config: TrainingsschemaConfiguration = {
+    columns: Object.fromEntries(props.map(prop => [`Column name of ${prop}`, prop])),
+    params: {dateFormat: 'd-M-y', groep: 'groep'}
+  };
+  const columnNames = Object.keys(config.columns);
 
   let service: TrainingsschemaApiService;
   let httpClient: HttpClient;

@@ -17,10 +17,6 @@ export class TrainingsschemaApiService {
   static readonly baseApiUrl = 'http://nieuwesite.loopgroepgroningen.nl/wp-json/wp/v2/';
   static readonly trainingsschemaUrl = 'pages/185';
 
-  private static transformations: { [P in keyof Partial<Training>]: (originalValue: string) => Training[P] } = {
-    datum: originalValue => DateTime.fromFormat(originalValue, 'd-M-y').toISODate()
-  };
-
   constructor(private http: HttpClient) {
   }
 
@@ -38,7 +34,7 @@ export class TrainingsschemaApiService {
       const headers = document.querySelectorAll('thead th');
       const propertyIndexes = TrainingsschemaApiService.propertyIndexes(config, headers);
       const rows = document.querySelectorAll('tbody tr');
-      return TrainingsschemaApiService.trainingen(propertyIndexes, rows);
+      return TrainingsschemaApiService.trainingen(config, propertyIndexes, rows);
     }));
   }
 
@@ -58,7 +54,7 @@ export class TrainingsschemaApiService {
    */
   private static propertyIndexes(config: TrainingsschemaConfiguration, headers: NodeListOf<Element>): [keyof Training, number][] {
     const headerToProperty = Object.fromEntries(
-      Object.entries(config).map(([key, value]) => [normalizeString(key), value])
+      Object.entries(config.columns).map(([key, value]) => [normalizeString(key), value])
     );
     const indexes: [keyof Training, number][] = [];
     for (let i = 0; i < headers.length; i++) {
@@ -74,7 +70,9 @@ export class TrainingsschemaApiService {
   /**
    * Translates the data in the HTML table into a list of Training-objects, based on the property indexes determined earlier.
    */
-  private static trainingen(propertyIndexes: [keyof Training, number][], rows: NodeListOf<Element>): Training[] {
+  private static trainingen(config: TrainingsschemaConfiguration,
+                            propertyIndexes: [keyof Training, number][],
+                            rows: NodeListOf<Element>): Training[] {
     const result: Training[] = [];
     for (let i = 0; i < rows.length; i++) {
       const training: Partial<Training> = {};
@@ -82,12 +80,20 @@ export class TrainingsschemaApiService {
       for (const [property, index] of propertyIndexes) {
         const textContent = columns.item(index).textContent;
         if (textContent) {
-          const transformation = TrainingsschemaApiService.transformations[property] || (originalValue => originalValue);
-          training[property] = transformation(textContent);
+          training[property] = TrainingsschemaApiService.transform(property, textContent, config);
         }
       }
       result.push(training as Training);
     }
     return result;
+  }
+
+  private static transform<K extends keyof Training>(property: K, value: string, config: TrainingsschemaConfiguration): Training[K] {
+    switch (property) {
+      case 'datum':
+        return DateTime.fromFormat(value, config.params.dateFormat).toISODate();
+      default:
+        return value;
+    }
   }
 }
