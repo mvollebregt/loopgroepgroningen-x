@@ -1,0 +1,9 @@
+{
+  "Dag": "dag",
+  "Datum": "datum",
+  "Groep": "groep",
+  "Week": "week",
+  "Soort": "omschrijving",
+  "Locatie": "locatie",
+  "Training": "type"
+}

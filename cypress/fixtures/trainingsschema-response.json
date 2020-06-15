@@ -1,0 +1,89 @@
+{
+  "id": 185,
+  "date": "2018-05-20T11:19:22",
+  "date_gmt": "2018-05-20T09:19:22",
+  "guid": {
+    "rendered": "http:\/\/nieuwesite.loopgroepgroningen.nl\/2018\/05\/20\/google-docs-trainingschema\/"
+  },
+  "modified": "2020-05-07T21:44:49",
+  "modified_gmt": "2020-05-07T19:44:49",
+  "slug": "google-docs-trainingschema",
+  "status": "publish",
+  "type": "page",
+  "link": "http:\/\/nieuwesite.loopgroepgroningen.nl\/google-docs-trainingschema\/",
+  "title": {
+    "rendered": "Trainingschema"
+  },
+  "content": {
+    "rendered": "\n<div class=\"mobileShow\"><p>Klik op het plusje om het schema op je telefoon uit te klappen<\/p><\/div>\n\n<div class=\"wpdt-c\">\n    \n<input type=\"hidden\" id=\"wdtNonceFrontendEdit_8\" name=\"wdtNonceFrontendEdit_8\" value=\"e90a30a564\" \/><input type=\"hidden\" name=\"_wp_http_referer\" value=\"\/wp-json\/wp\/v2\/pages\/185\" \/>    <input type=\"hidden\" id=\"table_1_desc\" value='{\"tableId\":\"table_1\",\"tableType\":\"google_spreadsheet\",\"selector\":\"#table_1\",\"responsive\":true,\"editable\":false,\"inlineEditing\":false,\"infoBlock\":true,\"globalSearch\":true,\"showRowsPerPage\":true,\"popoverTools\":false,\"hideBeforeLoad\":true,\"number_format\":1,\"decimalPlaces\":2,\"spinnerSrc\":\"http:\\\/\\\/nieuwesite.loopgroepgroningen.nl\\\/wp-content\\\/plugins\\\/wpdatatables\\\/assets\\\/\\\/img\\\/spinner.gif\",\"groupingEnabled\":false,\"tableWpId\":\"8\",\"dataTableParams\":{\"sDom\":\"BT\\u003C\\u0027clear\\u0027\\u003Elftip\",\"bSortCellsTop\":false,\"bFilter\":true,\"bPaginate\":true,\"aLengthMenu\":[[1,5,10,25,50,100,-1],[1,5,10,25,50,100,\"Alles\"]],\"iDisplayLength\":10,\"columnDefs\":[{\"sType\":\"string\",\"wdtType\":\"string\",\"bVisible\":true,\"orderable\":true,\"searchable\":true,\"InputType\":\"none\",\"name\":\"Dag\",\"origHeader\":\"Dag\",\"notNull\":false,\"conditionalFormattingRules\":[],\"className\":\" column-dag\",\"aTargets\":[0]},{\"sType\":\"string\",\"wdtType\":\"string\",\"bVisible\":true,\"orderable\":true,\"searchable\":true,\"InputType\":\"none\",\"name\":\"Datum\",\"origHeader\":\"Datum\",\"notNull\":false,\"conditionalFormattingRules\":[],\"className\":\" column-datum\",\"aTargets\":[1]},{\"sType\":\"string\",\"wdtType\":\"string\",\"bVisible\":true,\"orderable\":true,\"searchable\":true,\"InputType\":\"none\",\"name\":\"Groep\",\"origHeader\":\"Groep\",\"notNull\":false,\"conditionalFormattingRules\":[],\"className\":\" column-groep\",\"aTargets\":[2]},{\"sType\":\"formatted-num\",\"wdtType\":\"int\",\"bVisible\":true,\"orderable\":true,\"searchable\":true,\"InputType\":\"none\",\"name\":\"Week\",\"origHeader\":\"Week\",\"notNull\":false,\"conditionalFormattingRules\":[],\"className\":\"numdata integer  column-week\",\"aTargets\":[3]},{\"sType\":\"string\",\"wdtType\":\"string\",\"bVisible\":true,\"orderable\":true,\"searchable\":true,\"InputType\":\"none\",\"name\":\"Soort\",\"origHeader\":\"Soort\",\"notNull\":false,\"conditionalFormattingRules\":[],\"className\":\" column-soort\",\"aTargets\":[4]},{\"sType\":\"string\",\"wdtType\":\"string\",\"bVisible\":true,\"orderable\":true,\"searchable\":true,\"InputType\":\"none\",\"name\":\"Locatie\",\"origHeader\":\"Locatie\",\"notNull\":false,\"conditionalFormattingRules\":[],\"className\":\" column-locatie\",\"aTargets\":[5]},{\"sType\":\"string\",\"wdtType\":\"string\",\"bVisible\":true,\"orderable\":true,\"searchable\":true,\"InputType\":\"none\",\"name\":\"Training\",\"origHeader\":\"Training\",\"notNull\":false,\"conditionalFormattingRules\":[],\"className\":\" column-training\",\"aTargets\":[6]}],\"bAutoWidth\":false,\"order\":[[0,\"asc\"]],\"ordering\":true,\"oLanguage\":{\"sProcessing\":\"Bezig...\",\"sLengthMenu\":\"_MENU_ resultaten weergeven\",\"sZeroRecords\":\"Geen resultaten gevonden\",\"sInfo\":\"_START_ tot _END_ van _TOTAL_ resultaten\",\"sInfoEmpty\":\"Geen resultaten om weer te geven\",\"sInfoFiltered\":\" (gefilterd uit _MAX_ resultaten)\",\"sInfoPostFix\":\"\",\"sSearch\":\"Zoeken:\",\"sEmptyTable\":\"Geen resultaten aanwezig in de tabel\",\"sInfoThousands\":\".\",\"sLoadingRecords\":\"Een moment geduld aub - bezig met laden...\",\"oPaginate\":{\"sFirst\":\"Eerste\",\"sLast\":\"Laatste\",\"sNext\":\"Volgende\",\"sPrevious\":\"Vorige\"}},\"buttons\":[],\"bProcessing\":false,\"sPaginationType\":\"full_numbers\",\"oSearch\":{\"bSmart\":false,\"bRegex\":false,\"sSearch\":\"\"}},\"tabletWidth\":\"768\",\"mobileWidth\":\"320\",\"advancedFilterEnabled\":false,\"serverSide\":false,\"columnsFixed\":0,\"sumFunctionsLabel\":\"\",\"avgFunctionsLabel\":\"\",\"minFunctionsLabel\":\"\",\"maxFunctionsLabel\":\"\",\"columnsDecimalPlaces\":{\"Dag\":-1,\"Datum\":-1,\"Groep\":-1,\"Week\":-1,\"Soort\":-1,\"Locatie\":-1,\"Training\":-1},\"columnsThousandsSeparator\":{\"Week\":1},\"sumColumns\":[],\"avgColumns\":[],\"sumAvgColumns\":[],\"timeFormat\":\"h:i A\",\"datepickFormat\":\"dd\\\/mm\\\/yy\"}'\/>\n\n    <table id=\"table_1\"\n           class=\" responsive display nowrap data-t data-t wpDataTable\"\n           style=\"display: none; \"\n           data-described-by='table_1_desc'\n           data-wpdatatable_id=\"8\">\n\n        <!-- Table header -->\n        \n<thead>\n<tr>\n                    <th\n        data-class=\"expand\"                class=\" wdtheader sort \"\n        style=\"\">Dag<\/th>        <th\n                        class=\" wdtheader sort \"\n        style=\"\">Datum<\/th>        <th\n                        class=\" wdtheader sort \"\n        style=\"\">Groep<\/th>        <th\n                data-hide=\"phone,tablet\"        class=\"phone,tablet wdtheader sort numdata integer \"\n        style=\"\">Week<\/th>        <th\n                data-hide=\"phone,tablet\"        class=\"phone,tablet wdtheader sort \"\n        style=\"\">Soort<\/th>        <th\n                data-hide=\"phone,tablet\"        class=\"phone,tablet wdtheader sort \"\n        style=\"\">Locatie<\/th>        <th\n                data-hide=\"phone,tablet\"        class=\"phone,tablet wdtheader sort \"\n        style=\"\">Training<\/th>    <\/tr>\n<\/thead>\n        <!-- \/Table header -->\n\n        <!-- Table body -->\n        \n<tbody>\n        <tr id=\"table_8_row_0\">\n                    <td style=\"\">zaterdag<\/td>\n                    <td style=\"\">20-6-2020<\/td>\n                    <td style=\"\">A-groep<\/td>\n                    <td style=\"\">26<\/td>\n                    <td style=\"\">4 x 4 minuten tempo, 4 minuten rust<\/td>\n                    <td style=\"\">start parkeerplaats Kardinge<\/td>\n                    <td style=\"\">omvang<\/td>\n            <\/tr>\n            <tr id=\"table_8_row_1\">\n                    <td style=\"\">zaterdag<\/td>\n                    <td style=\"\">20-6-2020<\/td>\n                    <td style=\"\">B-groep<\/td>\n                    <td style=\"\">26<\/td>\n                    <td style=\"\">6 x 4 minuten tempo, 4 minuten rust<\/td>\n                    <td style=\"\">start parkeerplaats Kardinge<\/td>\n                    <td style=\"\">omvang<\/td>\n            <\/tr>\n            <tr id=\"table_8_row_2\">\n                    <td style=\"\">zaterdag<\/td>\n                    <td style=\"\">20-6-2020<\/td>\n                    <td style=\"\">C-groep<\/td>\n                    <td style=\"\">26<\/td>\n                    <td style=\"\"> 8 x 4 minuten tempo, 4 minuten rust<\/td>\n                    <td style=\"\">start parkeerplaats Kardinge<\/td>\n                    <td style=\"\">omvang<\/td>\n            <\/tr>\n            <tr id=\"table_8_row_3\">\n                    <td style=\"\">woensdag<\/td>\n                    <td style=\"\">24-6-2020<\/td>\n                    <td style=\"\">A-groep<\/td>\n                    <td style=\"\">27<\/td>\n                    <td style=\"\">6 x 2 minuut tempo - 2 minuten rust<\/td>\n                    <td style=\"\">start parkeerplaats Kardinge<\/td>\n                    <td style=\"\">intensief<\/td>\n            <\/tr>\n            <tr id=\"table_8_row_4\">\n                    <td style=\"\">woensdag<\/td>\n                    <td style=\"\">24-6-2020<\/td>\n                    <td style=\"\">B-groep<\/td>\n                    <td style=\"\">27<\/td>\n                    <td style=\"\">9 x 2 minuut tempo - 2 minuten rust<\/td>\n                    <td style=\"\">start parkeerplaats Kardinge<\/td>\n                    <td style=\"\">intensief<\/td>\n            <\/tr>\n            <tr id=\"table_8_row_5\">\n                    <td style=\"\">woensdag<\/td>\n                    <td style=\"\">24-6-2020<\/td>\n                    <td style=\"\">C-groep<\/td>\n                    <td style=\"\">27<\/td>\n                    <td style=\"\">12 x 2 minuut tempo - 2 minuten rust<\/td>\n                    <td style=\"\">start parkeerplaats Kardinge<\/td>\n                    <td style=\"\">intensief<\/td>\n            <\/tr>\n            <tr id=\"table_8_row_6\">\n                    <td style=\"\">zaterdag<\/td>\n                    <td style=\"\">27-6-2020<\/td>\n                    <td style=\"\">A-groep<\/td>\n                    <td style=\"\">27<\/td>\n                    <td style=\"\">start 4 mijl parcours 500 meter tempo, 300 meter rust Let op: populierenlaan ---> 4 mijl = 660 meter<\/td>\n                    <td style=\"\">start parkeerplaats Kardinge<\/td>\n                    <td style=\"\">intensief<\/td>\n            <\/tr>\n            <tr id=\"table_8_row_7\">\n                    <td style=\"\">zaterdag<\/td>\n                    <td style=\"\">27-6-2020<\/td>\n                    <td style=\"\">B-groep<\/td>\n                    <td style=\"\">27<\/td>\n                    <td style=\"\">start 4 mijl parcours 500 meter tempo, 300 meter rust<\/td>\n                    <td style=\"\">start parkeerplaats Kardinge<\/td>\n                    <td style=\"\">intensief<\/td>\n            <\/tr>\n            <tr id=\"table_8_row_8\">\n                    <td style=\"\">zaterdag<\/td>\n                    <td style=\"\">27-6-2020<\/td>\n                    <td style=\"\">C-groep<\/td>\n                    <td style=\"\">27<\/td>\n                    <td style=\"\">start 4 mijl parcours 500 meter tempo, 300 meter rust. Toetje kardingerbult?<\/td>\n                    <td style=\"\">start parkeerplaats Kardinge<\/td>\n                    <td style=\"\">intensief<\/td>\n            <\/tr>\n    <\/tbody>        <!-- \/Table body -->\n\n        <!-- Table footer -->\n        \n        <!-- \/Table footer -->\n\n    <\/table>\n\n<\/div><style>\ntable.wpDataTable { table-layout: fixed !important; }\ntable.wpDataTable td, table.wpDataTable th { white-space: normal !important; }\n<\/style>\n\n<style>\n\/* th background color *\/\n.wpdt-c .wpDataTablesWrapper table.wpDataTable thead th,\n.wpdt-c .wpDataTablesWrapper table.wpDataTable thead th.sorting {\n\tbackground-color: rgb(92,184,92) !important;\n    background-image: none !important;\n}\n\n\n<\/style>\n\n\n\n\n<p><\/p>\n",
+    "protected": false
+  },
+  "excerpt": {
+    "rendered": "<p>Klik op het plusje om het schema op je telefoon uit te klappen<\/p>\n",
+    "protected": false
+  },
+  "author": 1,
+  "featured_media": 0,
+  "parent": 0,
+  "menu_order": 3,
+  "comment_status": "closed",
+  "ping_status": "open",
+  "template": "",
+  "meta": {
+    "ngg_post_thumbnail": 0
+  },
+  "yoast_head": "<!-- This site is optimized with the Yoast SEO plugin v14.3 - https:\/\/yoast.com\/wordpress\/plugins\/seo\/ -->\n<title>Trainingschema - Loopgroep Groningen<\/title>\n<meta name=\"robots\" content=\"index, follow\" \/>\n<meta name=\"googlebot\" content=\"index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" \/>\n<meta name=\"bingbot\" content=\"index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" \/>\n<link rel=\"canonical\" href=\"http:\/\/nieuwesite.loopgroepgroningen.nl\/google-docs-trainingschema\/\" \/>\n<meta property=\"og:locale\" content=\"nl_NL\" \/>\n<meta property=\"og:type\" content=\"article\" \/>\n<meta property=\"og:title\" content=\"Trainingschema - Loopgroep Groningen\" \/>\n<meta property=\"og:description\" content=\"Klik op het plusje om het schema op je telefoon uit te klappen\" \/>\n<meta property=\"og:url\" content=\"http:\/\/nieuwesite.loopgroepgroningen.nl\/google-docs-trainingschema\/\" \/>\n<meta property=\"og:site_name\" content=\"Loopgroep Groningen\" \/>\n<meta property=\"article:modified_time\" content=\"2020-05-07T19:44:49+00:00\" \/>\n<meta name=\"twitter:card\" content=\"summary_large_image\" \/>\n<script type=\"application\/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https:\/\/schema.org\",\"@graph\":[{\"@type\":\"WebSite\",\"@id\":\"http:\/\/nieuwesite.loopgroepgroningen.nl\/#website\",\"url\":\"http:\/\/nieuwesite.loopgroepgroningen.nl\/\",\"name\":\"Loopgroep Groningen\",\"description\":\"De website van Loopgroep Groningen\",\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":\"http:\/\/nieuwesite.loopgroepgroningen.nl\/?s={search_term_string}\",\"query-input\":\"required name=search_term_string\"}],\"inLanguage\":\"nl\"},{\"@type\":\"WebPage\",\"@id\":\"http:\/\/nieuwesite.loopgroepgroningen.nl\/google-docs-trainingschema\/#webpage\",\"url\":\"http:\/\/nieuwesite.loopgroepgroningen.nl\/google-docs-trainingschema\/\",\"name\":\"Trainingschema - Loopgroep Groningen\",\"isPartOf\":{\"@id\":\"http:\/\/nieuwesite.loopgroepgroningen.nl\/#website\"},\"datePublished\":\"2018-05-20T09:19:22+00:00\",\"dateModified\":\"2020-05-07T19:44:49+00:00\",\"inLanguage\":\"nl\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"http:\/\/nieuwesite.loopgroepgroningen.nl\/google-docs-trainingschema\/\"]}]}]}<\/script>\n<!-- \/ Yoast SEO plugin. -->",
+  "_links": {
+    "self": [
+      {
+        "href": "http:\/\/nieuwesite.loopgroepgroningen.nl\/wp-json\/wp\/v2\/pages\/185"
+      }
+    ],
+    "collection": [
+      {
+        "href": "http:\/\/nieuwesite.loopgroepgroningen.nl\/wp-json\/wp\/v2\/pages"
+      }
+    ],
+    "about": [
+      {
+        "href": "http:\/\/nieuwesite.loopgroepgroningen.nl\/wp-json\/wp\/v2\/types\/page"
+      }
+    ],
+    "author": [
+      {
+        "embeddable": true,
+        "href": "http:\/\/nieuwesite.loopgroepgroningen.nl\/wp-json\/wp\/v2\/users\/1"
+      }
+    ],
+    "replies": [
+      {
+        "embeddable": true,
+        "href": "http:\/\/nieuwesite.loopgroepgroningen.nl\/wp-json\/wp\/v2\/comments?post=185"
+      }
+    ],
+    "version-history": [
+      {
+        "count": 13,
+        "href": "http:\/\/nieuwesite.loopgroepgroningen.nl\/wp-json\/wp\/v2\/pages\/185\/revisions"
+      }
+    ],
+    "predecessor-version": [
+      {
+        "id": 1410,
+        "href": "http:\/\/nieuwesite.loopgroepgroningen.nl\/wp-json\/wp\/v2\/pages\/185\/revisions\/1410"
+      }
+    ],
+    "wp:attachment": [
+      {
+        "href": "http:\/\/nieuwesite.loopgroepgroningen.nl\/wp-json\/wp\/v2\/media?parent=185"
+      }
+    ],
+    "curies": [
+      {
+        "name": "wp",
+        "href": "https:\/\/api.w.org\/{rel}",
+        "templated": true
+      }
+    ]
+  }
+}
