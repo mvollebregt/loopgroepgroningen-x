@@ -24,3 +24,22 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+
+/** loopgroep theme **/
+
+:root {
+  --lg-background: #FF8800;
+  --lg-dialog: #FAF4ED;
+}
+
+body {
+  --ion-background-color: var(--lg-background);
+}
+
+ion-toolbar {
+  --background: var(--lg-dialog);
+}
+
+ion-menu ion-content {
+  --ion-item-background: var(--lg-dialog);
+}
